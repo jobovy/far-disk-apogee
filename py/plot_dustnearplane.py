@@ -51,13 +51,16 @@ def plot_dustnearplane(plotname,green=False):
     bovy_plot.bovy_text(r'$D = 7\,\mathrm{kpc}$',top_left=True,
                         color='w',size=16.)
     # Overplot fields
-    glons= [34.,64.]
-    glats= [0.,0.]
+    glons= [34.,64.,27.]
+    glats= [0.,0.,0.]
+    colors= ['w','w','y']
     xs= numpy.linspace(-1.5,1.5,201)
     ys= numpy.sqrt(1.5**2.-xs**2.)
-    for glon,glat in zip(glons,glats):
-        bovy_plot.bovy_plot(xs+glon,ys+glat,'w-',overplot=True,zorder=1,lw=2.)
-        bovy_plot.bovy_plot(xs+glon,-ys+glat,'w-',overplot=True,zorder=1,lw=2.)
+    for glon,glat,c in zip(glons,glats,colors):
+        bovy_plot.bovy_plot(xs+glon,ys+glat,'-',overplot=True,zorder=1,lw=2.,
+                            color=c)
+        bovy_plot.bovy_plot(xs+glon,-ys+glat,'-',overplot=True,zorder=1,lw=2.,
+                            color=c)
     bovy_plot.bovy_end_print(plotname)
     return None
 
