@@ -7,7 +7,7 @@ matplotlib.use('Agg')
 from galpy.util import save_pickles, bovy_plot
 from matplotlib import cm
 import mwdust
-_NL= 201
+_NL= 221
 _NB= 21
 _SAVEFILE_MARSHALL= 'dustnearplane_marshall.sav'
 _SAVEFILE_GREEN= 'dustnearplane_green.sav'
