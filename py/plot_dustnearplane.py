@@ -39,7 +39,7 @@ def plot_dustnearplane(plotname,green=False):
     bovy_plot.bovy_dens2d(plotthis[::-1].T,origin='lower',cmap=cm.coolwarm,
 #                          interpolation='nearest',
                           colorbar=True,shrink=0.45,
-                          vmin=0.,vmax=2.,aspect=3.,
+                          vmin=0.,vmax=2.-0.75*green,aspect=3.,
                           xrange=[ls[-1]+(ls[1]-ls[0])/2.,
                                   ls[0]-(ls[1]-ls[0])/2.],
                           yrange=[bs[0]-(bs[1]-bs[0])/2.,
