@@ -171,7 +171,7 @@ investigation of the large-scale dynamics and metallicity structure of
 the disk. Because of the low extinction, such stars would have highly
 precise proper motions from Gaia (at large distances proper motions
 due to Galactic rotation are a few mas yr$^{-1}$) that combined with
-APOGEE’s precise radial velocities allow the study of large-scale
+APOGEE's precise radial velocities allow the study of large-scale
 lopsided modes in the disk and therefore more direct constraints on
 the axisymmetric rotation (the rotation curve) than will be possible
 from Gaia data alone. Similarly, a few hundred stars would allow the
@@ -179,21 +179,21 @@ mean metallicity at otherwise inaccessible regions of the Disk to be
 mapped leading to much stronger constraints on the azimuthal chemical
 homogeneity of the disk. The $l=64^\circ$ field would also sample the
 outer disk in a region that is much less affected by the warp than
-that at $l=180$, allowing for a cleaner study of the outer disk in that
+that at $l=180^\circ$, allowing for a cleaner study of the outer disk in that
 region and for stronger constraints on the warp and flaring of the
 disk by comparison with the $l=180^\circ$ study.
 
 \section{Feasibility Assessment}
 
 We select fields in low extinction regions by considering the $H$-band
-extinction to $D=$ kpc from the \citet{Marshall06a} and
+extinction to $D=7$ kpc from the \citet{Marshall06a} and
 \citet{Green15a} extinction maps (see
 \figurename~\ref{fig:ext}). Because placing new targets in existing
 fields allows for a more efficient use of the limited resources
 available in this ancillary call, we prefer to use fields that are
 already part of APOGEE-2. The $l=34^\circ$ and $l=64^\circ$ disk
 fields both each still have 6 remaining visits and from inspection of
-the extinction maps in \figurename~\ref{fig:ext} they have low
+the extinction maps in \figurename~\ref{fig:ext} they contain low
 extinction regions. We do not consider the $l=49^\circ$ field, because
 all of the planned designs have already been started to be observed
 and because the mid-plane in this field is entirely obscured by
@@ -211,8 +211,8 @@ extinction, we only target in regions with $A_H(D=7\,\mathrm{kpc})
 shown in the bottom panels of \figurename~\ref{fig:extfield}.
 
 In detail, we request single-visit observations for 207 stars in the
-\texttt{34+00} field, 207 stars in the \texttt{64+00} field, and 300
-stars in a new \texttt{27+00} field (the latter including sky and
+\texttt{034+00} field, 207 stars in the \texttt{064+00} field, and 300
+stars in a new \texttt{027+00} field (the latter including sky and
 telluric fibers). {\bf Therefore, the total number of requested
   fiber-hours is 714.} Targets are selected using $(J-K_s)_0 > 0.8$
 and $12 < H < 13$, which will return a S/N of 50 to 25 in a single
@@ -247,15 +247,15 @@ We request:
   \itemsep-.25em
   \begin{spacing}{0.1}
   \item Single-visit observations of 207 targets with $(J-K_s)_0 >
-    0.8$ and $12 < H < 13$ in the \texttt{34+00} field. These should
+    0.8$ and $12 < H < 13$ in the \texttt{034+00} field. These should
     be selected from the regions of the field that have $A_H$ at 7 kpc
     from \citet{Marshall06a} $\leq 1.4$. 
   \item Single-visit observations of 207 targets with $(J-K_s)_0 >
-    0.8$ and $12 < H < 13$ in the \texttt{64+00} field. These should
+    0.8$ and $12 < H < 13$ in the \texttt{064+00} field. These should
     be selected from the regions of the field that have $A_H$ at 7 kpc
     from \citet{Marshall06a} $\leq 1.4$. 
   \item Single-visit observations of 230 science targets with
-    $(J-K_s)_0 > 0.8$ and $12 < H < 13$ in a new \texttt{27+00} field
+    $(J-K_s)_0 > 0.8$ and $12 < H < 13$ in a new \texttt{027+00} field
     centered on $(l,b) = (27^\circ,0^\circ)$. These should be selected
     from the regions of the field that have $A_H$ at 7 kpc from
     \citet{Marshall06a} $\leq 1.4$. Tellurics and sky fibers should be
@@ -264,13 +264,13 @@ We request:
 \end{itemize}
 
 We demonstrate the target selection by applying it to the
-\texttt{34+00} and \texttt{64+00} fields, based on standard APOGEE
+\texttt{034+00} and \texttt{064+00} fields, based on standard APOGEE
 target-selection products. Target selection for the new field
-\texttt{27+00} would proceed in the same manner.
+\texttt{027+00} would proceed in the same manner.
 
 The \texttt{Python} routine in \figurename~\ref{fig:select} selects
 all potential targets; a random sub-sample (the first $N$) of those
-should be observed. For the \texttt{34+00} and \texttt{64+00} fields
+should be observed. For the \texttt{034+00} and \texttt{064+00} fields
 there are 3,087 and 4,521 potential targets respectively.
 
 \begin{figure}[t!]
@@ -316,7 +316,7 @@ there are 3,087 and 4,521 potential targets respectively.
 \end{minted}
 \caption{Selecting targets in a particular location; run as
   \texttt{python select\_targets.py targets.fits
-    location}.}\label{fig:select}
+    \$location}.}\label{fig:select}
 \end{figure}
 
 \begin{thebibliography}{}
