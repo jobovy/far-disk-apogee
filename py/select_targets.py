@@ -1,6 +1,9 @@
 import sys
+import glob
 import numpy
 import fitsio
+import esutil
+from pydl.pydlutils import yanny
 from galpy.util import bovy_coords
 import mwdust
 def select_targets(outfile,location):
@@ -25,8 +28,22 @@ def select_targets(outfile,location):
     # Cut on AH <= 1.4
     indx= ahdmap <= 1.4
     data= data[indx]
+    # Match against already drilled targets
+    data= esutil.numpy_util.add_fields(data,[('FLAG_DONT_OBSERVE', int)])
+    data['FLAG_DONT_OBSERVE']= 0
+    yannyfiles= glob.glob('../target_info/plateHolesSorted-*.par')
+    for yannyfile in yannyfiles:
+        drillFile= yanny.yanny(filename=yannyfile,np=True)
+        drilled= drillFile['STRUCT1']
+        # spherematch
+        h=esutil.htm.HTM()
+        m1,m2,d12 = h.match(data['RA'],data['DEC'],
+                            drilled['target_ra'],drilled['target_dec'],
+                             2./3600.,maxmatch=1)
+        data['FLAG_DONT_OBSERVE'][m1]= 1
     # Write to file
-    fitsio.write(outfile,data[numpy.random.permutation(len(data))])
+    fitsio.write(outfile,data[numpy.random.permutation(len(data))],
+                 clobber=True)
     return None
 
 if __name__ == '__main__':
