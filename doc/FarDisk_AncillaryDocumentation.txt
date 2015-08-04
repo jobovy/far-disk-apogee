@@ -5,10 +5,10 @@ This program takes advantage of low-extinction windows in the Galactic
 midplane to obtain a sample of luminous giants sampling the far
 reaches of the Milky Way's disk. Windows are selected based on the
 Marshall et al. (2006) 3D extinction map and luminous giants are
-targeted using a simple (J-Ks)_0 > 0.8 color cut for 12 < H < 13. This
-sample will allow lopsided kinematic and chemical modes to be mapped
-and provide an improved understanding of the warping and flaring of
-the Milky Way's disk.
+targeted using a simple (J-Ks)_0 > 0.8 color cut for stars with 12 < H
+< 13. This sample will allow lopsided kinematic and chemical modes to
+be mapped and provide an improved understanding of the warping and
+flaring of the Milky Way's disk.
 
 
 * Finding Targets
@@ -28,18 +28,18 @@ extinction.
 
 With the availability of three-dimensional dust maps covering a large
 fraction of the sky and a large range of extinctions (e.g., Marshall
-et al. 2006), it is now possible to identify low-extinction windows in
-the inner Milky Way where stars at large distances can be observed at
-relatively bright optical and infrared magnitudes. While the dust is
-highly filamentary on small scales such that most of the area of a
-typical APOGEE pointing in the mid-plane suffers from high extinction,
-substantial fractions of a pointing can cover low extinction
-regions. This ancillary program takes advantage of these windows in
-three pointings (centered on l = 27 deg, l = 33 deg, and l = 65 deg;
-all at b = 0) combined with a red color cut ([J-K_s]_0 > 0.8) to
-create a sample of ~700 luminous giants at D >~ 6 kpc in the
-mid-plane. About 250 of these will have D >~ 15 kpc and thus
-sample the disk at very large distances.
+et al. 2006; Green et al. 2015), it is now possible to identify
+low-extinction windows in the inner Milky Way where stars at large
+distances can be observed at relatively bright optical and infrared
+magnitudes. While the dust is highly filamentary on small scales such
+that most of the area of a typical APOGEE pointing in the mid-plane
+suffers from high extinction, substantial fractions of a pointing can
+cover low extinction regions. This ancillary program takes advantage
+of these windows in three pointings (centered on l = 27 deg, l = 33
+deg, and l = 65 deg; all at b = 0) combined with a red color cut
+([J-K_s]_0 > 0.8) to create a sample of ~700 luminous giants at D >~ 6
+kpc in the mid-plane. About 250 of these will have D >~ 15 kpc and
+thus sample the disk at very large distances.
 
 A sample of only a few hundred of stars in low-extinction windows
 probing distances as far as 16 kpc a few magnitudes below the tip of
@@ -47,13 +47,13 @@ the red-giant branch significantly improves APOGEE-2's investigation
 of the large-scale dynamics and metallicity structure of the
 disk. Because of the low extinction, such stars will have highly
 precise proper motions from Gaia (at large distances proper motions
-due to Galactic rotation are a few mas yr$^{-1}$) that combined with
-APOGEE's precise radial velocities allow the study of large-scale
-lopsided modes in the disk and therefore more direct constraints on
-the axisymmetric rotation (the rotation curve) than will be possible
-from Gaia data alone. Similarly, a few hundred stars will allow the
-mean metallicity at otherwise inaccessible regions of the Disk to be
-mapped leading to much stronger constraints on the azimuthal chemical
+due to Galactic rotation are a few mas/yr) that combined with APOGEE's
+precise radial velocities allow the study of large-scale lopsided
+modes in the disk and therefore more direct constraints on the
+axisymmetric rotation (the rotation curve) than will be possible from
+Gaia data alone. Similarly, a few hundred stars will allow the mean
+metallicity at otherwise inaccessible regions of the Disk to be mapped
+leading to much stronger constraints on the azimuthal chemical
 homogeneity of the disk. The l = 65 deg field alsos sample the outer
 disk in a region that is much less affected by the warp than that at l
 = 180 deg, allowing for a cleaner study of the outer disk in that
@@ -88,4 +88,6 @@ disk fields are flagged, but not re-observed.
 
 * References
 
+Green, G. M., Schlafly, E. F., Finkbeiner, D. P., et al. 2015, ApJ,
+in press (arXiv:1507.01005)
 Marshall, D. J., Robin, A. C., Reyĺe, C., Schultheis, M.,  Picaud, S. 2006, A&A, 453, 635 (2006A%26A...453..635M)
