@@ -1,0 +1,91 @@
+
+* Summary
+
+This program takes advantage of low-extinction windows in the Galactic
+midplane to obtain a sample of luminous giants sampling the far
+reaches of the Milky Way's disk. Windows are selected based on the
+Marshall et al. (2006) 3D extinction map and luminous giants are
+targeted using a simple (J-Ks)_0 > 0.8 color cut for 12 < H < 13. This
+sample will allow lopsided kinematic and chemical modes to be mapped
+and provide an improved understanding of the warping and flaring of
+the Milky Way's disk.
+
+
+* Finding Targets
+
+<No action needed; info about the targeting bits used to identify this program's targets will be provided by the SDSS-IV special projects coordinator & targeting team>
+
+
+* Description
+
+One of APOGEE-2's main scientific objectives is a comprehensive study
+of the chemo-dynamical structure of a large volume of the Milky Way's
+disk. However, while the main target selection for the disk of the
+Milky Way will produce a large sample of stars at distances between 6
+and ~9 kpc, the expected number of stars at these large distances in
+the mid-plane will only be a few dozen, primarily because of the large
+extinction.
+
+With the availability of three-dimensional dust maps covering a large
+fraction of the sky and a large range of extinctions (e.g., Marshall
+et al. 2006), it is now possible to identify low-extinction windows in
+the inner Milky Way where stars at large distances can be observed at
+relatively bright optical and infrared magnitudes. While the dust is
+highly filamentary on small scales such that most of the area of a
+typical APOGEE pointing in the mid-plane suffers from high extinction,
+substantial fractions of a pointing can cover low extinction
+regions. This ancillary program takes advantage of these windows in
+three pointings (centered on l = 27 deg, l = 33 deg, and l = 65 deg;
+all at b = 0) combined with a red color cut ([J-K_s]_0 > 0.8) to
+create a sample of ~700 luminous giants at D >~ 6 kpc in the
+mid-plane. About 250 of these will have D >~ 15 kpc and thus
+sample the disk at very large distances.
+
+A sample of only a few hundred of stars in low-extinction windows
+probing distances as far as 16 kpc a few magnitudes below the tip of
+the red-giant branch significantly improves APOGEE-2's investigation
+of the large-scale dynamics and metallicity structure of the
+disk. Because of the low extinction, such stars will have highly
+precise proper motions from Gaia (at large distances proper motions
+due to Galactic rotation are a few mas yr$^{-1}$) that combined with
+APOGEE's precise radial velocities allow the study of large-scale
+lopsided modes in the disk and therefore more direct constraints on
+the axisymmetric rotation (the rotation curve) than will be possible
+from Gaia data alone. Similarly, a few hundred stars will allow the
+mean metallicity at otherwise inaccessible regions of the Disk to be
+mapped leading to much stronger constraints on the azimuthal chemical
+homogeneity of the disk. The l = 65 deg field alsos sample the outer
+disk in a region that is much less affected by the warp than that at l
+= 180 deg, allowing for a cleaner study of the outer disk in that
+qregion and for stronger constraints on the warp and flaring of the
+disk by comparison with the l = 180 deg study.
+
+
+* Primary Contacts
+
+Jo Bovy
+
+University of Toronto
+
+bovy - at - astro.utoronto.ca
+
+* Other Contacts
+
+* Target Selection Details
+
+For each pointing, targets are selected in the region of the field for
+which A_H(D=7kpc) <= 1.4. This A_H is computed from Marshall et
+al. (2006)'s 3D extinction map on their native 15'x15' grid in (l,b)
+using linear interpolation in distance and using A_H/A_Ks =
+0.46/0.31. Targets in this region are selected from the 2MASS catalog
+using the same 2MASS quality cuts and RJCE dereddening as the standard
+APOGEE disk targets. All potential targets are obtained by selecting
+stars with (J − Ks)_0 > 0.8 and 12 < H < 13. A random subset of these
+are observed. Targets at the top of the list that were already
+observed as part of the regular disk sample in the l = 34 and l = 64
+disk fields are flagged, but not re-observed.
+
+
+* References
+
+Marshall, D. J., Robin, A. C., Reyĺe, C., Schultheis, M.,  Picaud, S. 2006, A&A, 453, 635 (2006A%26A...453..635M)
